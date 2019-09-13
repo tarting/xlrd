@@ -1091,7 +1091,6 @@ def evaluate_name_formula(bk, nobj, namex, blah=0, level=0):
                     argtext = listsep.join(arg.text for arg in stack[-nargs:])
                     otext = "%s(%s)" % (func_name, argtext)
                     res = Operand(oUNK, None, FUNC_RANK, otext)
-                    print('something is workging', type(res), res)
                     if funcx == 1: # IF
                         testarg = stack[-nargs]
                         if testarg.kind not in (oNUM, oBOOL):
